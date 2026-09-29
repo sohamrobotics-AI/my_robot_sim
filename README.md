@@ -128,6 +128,10 @@ It publishes to the same `/vo/odom` topic, so the EKF config is unchanged. Untes
 - **Check frames:** `ros2 topic echo /camera/image --field header.frame_id --once` should print
   `camera_optical_link`.
 
+## Demo
+
+![Robot in Gazebo](screenshots/robot_gazebo.png)
+
 ## Next steps
 
 - Nav2 (planner, controller, behaviour trees) on top of the saved map
