@@ -1,0 +1,83 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Depth: 5
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+    - Class: rviz_default_plugins/Map
+      Name: Map
+      Enabled: true
+      Topic:
+        Value: /map
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+    - Class: rviz_default_plugins/Image
+      Name: Camera
+      Enabled: true
+      Topic:
+        Value: /camera/image
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Camera 3D points
+      Enabled: true
+      Topic:
+        Value: /camera/points_colored
+        Depth: 2
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: RGB8
+      Channel Name: rgb
+      Use rainbow: false
+    - Class: rviz_default_plugins/Odometry
+      Name: EKF odom
+      Enabled: true
+      Topic:
+        Value: /odometry/filtered
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 30
+  Enabled: true
+  Name: root
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 14.0
+      Pitch: 1.2
+      Yaw: 3.14
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+Window Geometry:
+  Height: 900
+  Width: 1400
