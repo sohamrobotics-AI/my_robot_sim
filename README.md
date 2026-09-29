@@ -31,7 +31,7 @@ sudo apt install ros-jazzy-desktop ros-jazzy-ros-gz ros-jazzy-xacro \
 The repository folder can have any name; the ROS package inside is called `my_robot_sim`.
 
 ```bash
-mkdir -p ~/ws/src && cd ~/ws/src
+mkdir -p ~/ws/src && cd ~/ws/src/my_robot_sim
 git clone https://github.com/<sohamrobotics-AI>/visual_slam_diff_drive_robot.git
 cd ~/ws
 rosdep install --from-paths src --ignore-src -r -y
